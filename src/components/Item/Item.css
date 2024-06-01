@@ -16,6 +16,7 @@
   cursor: pointer;
   background: linear-gradient(135deg, #292B31, #3A3D46);
   transition: scale 0.150s;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.23);
 
   &:active {
     scale: 0.93;

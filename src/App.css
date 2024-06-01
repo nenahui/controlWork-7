@@ -1,16 +1,21 @@
 #root {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 2rem;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
 }
 
 .total-price {
-    position: absolute;
-    bottom: -10px;
-    left: 10px;
+  position: absolute;
+  bottom: -10px;
+  left: 29px;
+}
+
+.text-gray {
+  opacity: 0.7;
+  font-weight: 400;
 }

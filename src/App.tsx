@@ -76,7 +76,9 @@ const App = () => {
 				{orderCount ? (
 					<>
 						{orderList}
-						<p className={'total-price'}>Total price: {totalPrice} KGS</p>
+						<p className={'total-price'}>
+							Total price: {totalPrice} <span className={'text-gray'}>KGS</span>
+						</p>
 					</>
 				) : (
 					<div>
