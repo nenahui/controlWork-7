@@ -5,7 +5,7 @@ interface IOrderItemProps {
 	itemName: string;
 	count: number;
 	price: number;
-	onClick: () => void;
+	onClick?: () => void;
 }
 
 const OrderItem: React.FC<IOrderItemProps> = ({
