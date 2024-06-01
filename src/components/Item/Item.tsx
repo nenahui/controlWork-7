@@ -9,12 +9,18 @@ import './Item.css';
 interface IItemProps {
 	itemName: string;
 	price: number;
+	activeItem: string;
 	onClick?: () => void;
 }
 
-const Item: React.FC<IItemProps> = ({ itemName, price, onClick }) => {
+const Item: React.FC<IItemProps> = ({
+	itemName,
+	price,
+	activeItem,
+	onClick,
+}) => {
 	return (
-		<div onClick={onClick} className={'item'}>
+		<div className={'item'} onClick={onClick}>
 			<img
 				src={
 					itemName === 'Cola'
@@ -34,7 +40,7 @@ const Item: React.FC<IItemProps> = ({ itemName, price, onClick }) => {
 				alt={itemName}
 			/>
 			<div className='text'>
-				<h4>{itemName}</h4>
+				<h4 className={activeItem}>{itemName}</h4>
 				<p>Price: {price}KGS</p>
 			</div>
 		</div>

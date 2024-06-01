@@ -15,6 +15,11 @@
   width: 220px;
   cursor: pointer;
   background: linear-gradient(135deg, #292B31, #3A3D46);
+  transition: scale 0.150s;
+
+  &:active {
+    scale: 0.93;
+  }
 }
 
 .item img {
@@ -32,10 +37,18 @@
 .text h4 {
   margin: 0;
   font-weight: 600;
+  padding: 2px 25px 2px 0;
 }
 
 .text p {
   margin: 0;
   font-weight: 400;
   font-size: 14px;
+  padding: 0 5px;
+}
+
+.text-red {
+  transition: color .150s, background 0.05s;
+  color: #42af80;
+  background: url("icons/check-all.svg") center right / 20px no-repeat;
 }

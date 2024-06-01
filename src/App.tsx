@@ -47,6 +47,7 @@ const App = () => {
 
 	const itemList = orders.map((item) => (
 		<Item
+			activeItem={item.count > 0 ? 'text-red' : ''}
 			key={item.id}
 			itemName={item.name}
 			price={item.price}
